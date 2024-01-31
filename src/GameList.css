@@ -1,0 +1,37 @@
+.game-list {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+  }
+  
+  .game {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+  }
+  
+  .teams {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .score {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .loading, .no-games {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
+  /* Ensure that score is displayed even if it's null */
+  .score:empty::before {
+    content: 'TBD - TBD';
+    color: #999;
+  }
+  
